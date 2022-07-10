@@ -1,0 +1,98 @@
+
+<!-- cards -->
+<div *ngIf="item">
+  <div class="container">
+    <div class="row">
+    
+      
+      
+          <div id="q1"  class="col-4"  *ngFor="let emp of employees">
+            <div class="card" style="width: 18rem;">
+              <img id="m50" src="./assets/2048px-Emblem-person-blue.svg.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white;">{{emp.firstName}}</h5>
+                <p class="card-text" style="color: white;">{{emp.secondName}}</p>
+                <p class="card-text" style="color: white;">{{emp.city}}</p>
+                <!-- <a href="#" class="btn btn-primary">EDIT</a> -->
+                <!-- modal -->
+                <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  EDIT
+                </button>
+                <!-- Modal -->
+                <div  *ngFor="let emp of employees" class="modal fade come-from-modal right in" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="" >
+                          
+                          <div  >
+                       
+                            <label for="firstname"></label>
+                            <input type="text" id="firstname" class="form-control">
+                          </div>
+                          <div>
+                             <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" class="form-control">
+                          </div>
+                          <div>
+                            <label for="">Gender</label>
+                            <br>
+                            <input type="checkbox" name="m1" id="m1"> &nbsp;
+                            <label for="m1">Male</label>
+                            <br>
+                            <input type="checkbox" name="f1" id="f1"> &nbsp;
+                            <label for="m1">Female</label>
+                          </div>
+                          <div>
+                            <label for="mail">Email</label>
+                           <input type="email" id="mail" class="form-control">
+                         </div>
+                         <div>
+                          <label for="address">Address</label>
+                         <input type="text" id="address" class="form-control">
+                       </div>
+                       <div>
+                        <label for="city">City</label>
+                       <input type="text" id="City" class="form-control">
+                     </div>
+                     <div>
+                      <label for="state">State</label>
+                     <input type="text" id="state" class="form-control">
+                   </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal -->
+              </div>
+            </div>
+        </div>
+  <br>
+  <br>
+  <br>
+  <!-- pagination -->
+  <nav id="q1" aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="dummy">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="dummy">1</a></li>
+      <li class="page-item"><a class="page-link" href="dummy">2</a></li>
+      <li class="page-item"><a class="page-link" href="dummy">3</a></li>
+      <li class="page-item"><a class="page-link" href="dummy">Next</a></li>
+    </ul>
+  </nav>
+  <!-- pagination -->
+    </div>
+  </div>
+</div>
+<!-- search -->
+

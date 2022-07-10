@@ -1,0 +1,63 @@
+.modal-dialog,
+.come-from-modal.right .modal-dialog{
+    position: fixed;
+    margin: auto;
+    width:320px;
+    height: 100%;
+    transform: translate3d(0%,0,0);
+}
+
+.come-from-modal.right .modal-content{
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0px;
+}
+.come-from-modal.right .modal-body{
+    padding: 15px 15px 80px;
+}
+
+.come-from-modal.right.fade .modal-dialog{
+    right:-320px;
+    transition: opacity 0.3s linear,right 0.3s ease-out ;
+    animation: rightToLeft 0.3s ease-in forwards;
+   
+}
+.come-from-modal.right.fade.in .modal-dialog{
+    right: 0;
+}
+/* //grid */
+#f1{
+    color: white;
+}
+#f1:hover{
+    background-color: white;
+    color: black;
+}
+#f2{
+    color: white;
+}
+#f2:hover{
+    color: blue;
+    background-color: white;
+}
+#f3{
+    color: white;
+}
+#f4{
+    font-size:xx-large;
+    display: inline;
+}
+#f11{
+    width: 100px;
+    height: 40px;
+   border-radius: 10px;
+    background-color:rgb(12, 82, 233);
+    color: white;
+}
+#s1{
+    margin-left: 10px;
+
+}
+#q1{
+    margin-top: 20px;
+}
